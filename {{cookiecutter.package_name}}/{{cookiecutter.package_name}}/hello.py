@@ -12,4 +12,4 @@ def hello(name: str) -> None:
 		str
 			greeting message.
 	"""
-	return f"Hello {name}"
+	return f"Hello {name}!"

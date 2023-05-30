@@ -1,9 +1,14 @@
 {
-    "package_name": "firs_project",
-    "author_name": "R. Mammeri",
-    "author_email": "user.medmammeri@gmail.com",
-    "description": "",
-    "repo_url": "",
+    "package_name": "my_package",
+    "author_name": "John Doe",
+    "author_email": "johndoe@example.com",
+    "description": "A Description of my python package.",
+    "repo_url": "https://github.com/username/my-python-repo",
     "doc_site_name": "Documentation",
-    "doc_repo_name": "Repository name"
+    "doc_repo_name": "my-python-repo",
+    "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"],
+    "_runner": "{{ runner.os }}",
+    "_steps": "{{ steps.setup-python.outputs.python-version }}",
+    "_hash": "{{ hashFiles('**/poetry.lock') }}"
+
 }

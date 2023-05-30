@@ -170,7 +170,6 @@ bld/
 *.svclog
 *.scc
 
-
 # Visual Studio code coverage results
 *.coverage
 *.coveragexml

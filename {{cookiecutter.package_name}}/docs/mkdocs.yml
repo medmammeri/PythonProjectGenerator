@@ -1,15 +1,15 @@
-site_name: Documentation
-repo_url:
-repo_name: Repository name
-site_author: R. Mammeri
-copyright: Copyright &copy; R. Mammeri 2023
+site_name: {{cookiecutter.doc_site_name}}
+repo_url: {{cookiecutter.repo_url}}
+repo_name: {{cookiecutter.doc_repo_name}}
+site_author: {{cookiecutter.author_name}}
+copyright: Copyright &copy; {{cookiecutter.author_name}} 2023
 
 theme:
   language: en
 #  font:
 #    text: IBM Plex Mono
   icon:
-    repo: fontawesome/brands/gitlab
+    repo: fontawesome/brands/gitlab #TODO change this gitlab with parameter
   name: material
   palette:
     # Palette toggle for light mode
@@ -54,12 +54,6 @@ plugins:
       toc_depth: 5
       strict: true
       increment_across_pages: true
-      exclude:
-        - index.md
-        - another_page.md
-        - reference
-      restart_increment_after:
-        - probability/measure theory.md
 
 markdown_extensions:
 
