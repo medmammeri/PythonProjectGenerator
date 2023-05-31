@@ -1,5 +1,6 @@
 {
-    "package_name": "my_package",
+    "project_name": "my_package",
+    "project_slug": "{{ cookiecutter.package_name.lower().replace(' ', '_').replace('-', '_') }}",
     "author_name": "John Doe",
     "author_email": "johndoe@example.com",
     "description": "A Description of my python package.",
