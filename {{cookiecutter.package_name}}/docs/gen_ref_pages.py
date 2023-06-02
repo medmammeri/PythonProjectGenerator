@@ -6,18 +6,18 @@ import mkdocs_gen_files
 
 nav = mkdocs_gen_files.Nav()
 
-for path in sorted(Path("../{{cookiecutter.package_slug}}").rglob("*.py")):  #
+for path in sorted(Path("../{{cookiecutter.project_slug}}").rglob("*.py")):  #
     if path.name not in ["__init__.py", "settings.py"]:
-        module_path = path.relative_to("../{{cookiecutter.package_slug}}").with_suffix(
+        module_path = path.relative_to("../{{cookiecutter.project_slug}}").with_suffix(
             ""
         )  #
-        doc_path = path.relative_to("../{{cookiecutter.package_slug}}").with_suffix(
+        doc_path = path.relative_to("../{{cookiecutter.project_slug}}").with_suffix(
             ".md"
         )  #
         full_doc_path = Path("reference", doc_path)  #
 
         # parts = list(module_path.parts)
-        parts = ["{{cookiecutter.package_slug}}"]
+        parts = ["{{cookiecutter.project_slug}}"]
         parts.extend(list(module_path.parts))
 
         nav[parts] = doc_path.as_posix()
