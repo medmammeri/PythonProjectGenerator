@@ -1,6 +1,6 @@
-site_name: {{cookiecutter.doc_site_name}}
+site_name: {{cookiecutter.documentation_page_name}}
 repo_url: {{cookiecutter.repo_url}}
-repo_name: {{cookiecutter.doc_repo_name}}
+repo_name: {{cookiecutter.repository_name}}
 site_author: {{cookiecutter.author_name}}
 copyright: Copyright &copy; {{cookiecutter.author_name}} 2023
 
